@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="mainDivId">
+        <div id="headerDivId">
+            <div id="logoDivId">
+                <p>YTS</p>
+            </div>
+            <div id="navDivId">
+                <input type="button" value="Home" id="homeBtn" class="navItemClass" />
+                <input type="button" value="Login" id="loginBtn" class="navItemClass" />
+                <input type="button" value="Register" id="registerBtn" class="navItemClass" />
+            </div>
+        </div>
+
+        <div id="bodyDivId">
+            <div id="loginDivId">
+                <p>Login</p>
+                <form>
+                    <input type="email" oninvalid="this.setCustomValidity('email is required')"
+                        oninput="this.setCustomValidity('')" required placeholder="email">
+
+                    <input type="password" oninvalid="this.setCustomValidity('password is required')"
+                        oninput="this.setCustomValidity('')" required placeholder="password">
+
+                    <input id="submitbtnID" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+
+        <div id="footerDivId">
+            <p>YTS &copy; shenouda fawzy & ebram luis </p>
+            <p>Read more about us <a href="">here</a>.</p>
+        </div>
+    </div>
+
+    <script src="Login_Register.js"></script>
+</body>
+
+</html>
