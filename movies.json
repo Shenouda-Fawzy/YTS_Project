@@ -1,0 +1,160 @@
+{
+    "Action": [
+        {
+            "Fast & Furious": {
+                "Titile": "Fast & Furious Presents: Hobbs & Shaw",
+                "Year": "2019",
+                "length": "2h 17 min",
+                "imdb": 6.6,
+                "poster": "Res/SF_FastFuriouse_Poster.jpg",
+                "pic1": "Res/SF_FastFuriouse_Pic1.jpg",
+                "pic2": "Res/SF_FastFuriouse_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/fast-furious-presents-hobbs-shaw-2019"
+            }
+        },
+        {
+            "Crawl": {
+                "Titile": "Crawl",
+                "Year": "2019",
+                "length": "1hr 27 min",
+                "imdb": 6.2,
+                "poster": "Res/SF_Crawl_Poster.jpg",
+                "pic1": "Res/SF_Crawl_Pic1.jpg",
+                "pic2": "Res/SF_Crawl_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/crawl-2019"
+            }
+        },
+        {
+            "The Wolf's Call": {
+                "Titile": "The Wolf's Call",
+                "Year": "2019",
+                "length": "1hr 55 min",
+                "imdb": 7,
+                "poster": "Res/SF_Wolf_Call_Poster.jpg",
+                "pic1": "Res/SF_Wolf_Call_Pic1.jpg",
+                "pic2": "Res/SF_Wolf_Call_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/the-wolfs-call-2019"
+            }
+        },
+        {
+            "A Score to Settle": {
+                "Titile": "A Score to Settle",
+                "Year": "2019",
+                "length": "1hr 43 min",
+                "imdb": 4.5,
+                "poster": "Res/SF_Score_To_Settel_Poster.jpg",
+                "pic1": "Res/SF_Score_To_Settel_Pic1.jpg",
+                "pic2": "Res/SF_Score_To_Settel_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/a-score-to-settle-2019"
+            }
+        },
+        {
+            "Breaking In": {
+                "Titile": "A Score to Settle",
+                "Year": "2018",
+                "length": "1hr 28 min",
+                "imdb": 5.4,
+                "poster": "Res/SF_Breaking_in_Poster.jpg",
+                "pic1": "Res/SF_Breaking_in_Pic1.jpg",
+                "pic2": "Res/SF_Breaking_in_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/breaking-in-2018"
+            }
+        }
+    ],
+    "Animation": [
+        {
+            "The Secret Life of Pets 2": {
+                "Title": "The Secret Life of Pets 2",
+                "Year": "2019",
+                "length": "1hr 26 min",
+                "imdb": 6.5,
+                "poster": "Res/SF_Secret_Live_Of_Pet_Poster.jpg",
+                "pic1": "Res/SF_Secret_Live_Of_Pet_Pic1.jpg",
+                "pic2": "Res/SF_Secret_Live_Of_Pet_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/the-secret-life-of-pets-2-2019"
+            }
+        },
+        {
+            "Toy Story 4": {
+                "Title": "Toy Story 4",
+                "Year": "2019",
+                "length": "1hr 40 min",
+                "imdb": 8,
+                "poster": "Res/SF_Toy_Poster.jpg",
+                "pic1": "Res/SF_Toy_Pic1.jpg",
+                "pic2": "Res/SF_Toy_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/toy-story-4-2019"
+            }
+        },
+        {
+            "The NeverEnding Story": {
+                "Title": "The NeverEnding Story",
+                "Year": "1984",
+                "length": "1hr 42 min",
+                "imdb": 7.4,
+                "poster": "Res/SF_The_Never_Ending_Story_Poster.jpg",
+                "pic1": "Res/SF_The_Never_Ending_Story_Pic1.jpg",
+                "pic2": "Res/SF_The_Never_Ending_Story_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/the-neverending-story-1984"
+            }
+        },
+        {
+            "Toy Story 2": {
+                "Title": "Toy Story 2",
+                "Year": "1999",
+                "length": "1hr 32 min",
+                "imdb": 7.9,
+                "poster": "Res/SF_Toy2_Poster.jpg",
+                "pic1": "Res/SF_Toy2_Pic1.jpg",
+                "pic2": "Res/SF_Toy2_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/toy-story-2-1999"
+            }
+        }
+    ],
+    "Romance":[
+        {
+            "Murder Mystery": {
+                "Title": "Murder Mystery",
+                "Year": "2019",
+                "length": "1hr 37 min",
+                "imdb": 6,
+                "poster": "Res/SF_Murder_Mystery_Poster.jpg",
+                "pic1": "Res/SF_Murder_Mystery_Pic1.jpg",
+                "pic2": "Res/SF_Murder_Mystery_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/murder-mystery-2019"
+            },
+            "See You Soon": {
+                "Title": "See You Soon",
+                "Year": "2019",
+                "length": "1hr 47 min",
+                "imdb": 4.7,
+                "poster": "Res/SF_See_You_Soon_Poster.jpg",
+                "pic1": "Res/SF_See_You_Soon_Pic1.jpg",
+                "pic2": "Res/SF_See_You_Soon_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/see-you-soon-2019"
+            },
+            "Falling Inn Love": {
+                "Title": "Falling Inn Love",
+                "Year": "2019",
+                "length": "1hr 38 min",
+                "imdb": 5.6,
+                "poster": "Res/SF_Falling_Inn_Love_Poster.jpg",
+                "pic1": "Res/SF_Falling_Inn_Love_Pic1.jpg",
+                "pic2": "Res/SF_Falling_Inn_Love_Pic2.jpg",
+                "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
+                "url": "https://yts.lt/movie/falling-inn-love-2019"
+            }
+        }
+    ]
+}
