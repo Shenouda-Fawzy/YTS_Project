@@ -8,27 +8,32 @@
 <body>
 
     <div id="containerDiv">
-        <div id="headerDiv">
-            <div id="headerLogoDiv">
-                <img src="Res/logo.jpg" alt="logo" id="logoImg">
+
+        <div id="headerDivId">
+            <div id="logoDivId">
+                <p>YTS</p>
             </div>
-            <div id="headerNavDiv">
+            <div id="navDivId">
                 <input type="button" value="Home" id="homeBtn" class="navItemClass" />
                 <input type="button" value="Login" id="loginBtn" class="navItemClass" />
                 <input type="button" value="Register" id="registerBtn" class="navItemClass" />
             </div>
         </div>
+
+
         <!--end of header-->
         <div id="detailsDiv">
+
+
             <div id="movieDetails">
-                <div id="movieDetailsOne">
-                    <div id="movieDetailsOneOne">
-                        <img src="Res/film-cover.jpg" />
-                    </div>
-                    <div id="movieDetailsOneTwo">
-                        <input type="button" value="Download" />
-                    </div>
+
+
+                <div id="movieDetailsOne" class="moviePosterDivClass">
+                    <img src="res/film-cover.jpg" class="moviePosterPhotoClass" />
+                    <input type="button" value="Download" class="movieDownloadButtonClass" />
                 </div>
+
+
                 <div id="movieDetailsTwo">
                     <p>
                         The Lion King
@@ -38,20 +43,20 @@
                         Adventure / Animation / Drama / Family / Musical
                     </p>
                 </div>
+
                 <div id="movieDetailsThree">
                     <p>Similar Movies</p>
                     <div>
-                        <img src="Res/film2-cover.jpg" class="similarMoviesImage"/>
+                        <img src="Res/film2-cover.jpg" class="similarMoviesImage" />
                     </div>
                     <div>
-                            <img src="Res/film3-cover.jpg" class="similarMoviesImage"/>
+                        <img src="Res/film3-cover.jpg" class="similarMoviesImage" />
                     </div>
-
-
-
-                    
                 </div>
+
             </div>
+
+
             <div id="movietrailer">
                 <div id="trailerOne">
                     <video id="traielVideo" controls>
@@ -80,6 +85,7 @@
                         October 11, 2019 at 05:56 PM
                     </p>
                 </div>
+
                 <div id="actors">
                     <p class="directorCastTitle">Director</p>
                     <div class="directorCastInformation">
