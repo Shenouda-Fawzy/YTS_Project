@@ -1,299 +1,300 @@
 #containerDiv{
-background-color: rgb(15, 15, 15);
-width: 90%;
-height: 198%;
-margin: auto;
-}
-#headerDiv{
-width: 98%;
-height: 5%;
-margin:auto;
-}
-#headerLogoDiv{
-    width: 20%;
+    background-color: rgb(15, 15, 15);
+    width: 90%;
+    height: 198%;
+    margin: auto;
+    }
+    #headerDiv{
+    width: 98%;
+    height: 5%;
+    margin:auto;
+    }
+    #headerLogoDiv{
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+    #logoImg{
+        width: 100%;
+        height: 100%;
+    }
+    #HeaderNavDiv{
+        background-color: rgb(8, 8, 8);
+        text-align: right;
+        width: 80%;
+        height: 100%;
+        float: left;
+    }
+    .navItemClass{
+        height: 100%;
+        width: 8%;
+        background-color: rgb(15, 15, 15);
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:16px;
+        border: none;
+        cursor:pointer;
+    }
+    #homeBtn{
+        color: rgb(60, 60, 60);
+    }
+    
+    
+    
+    
+    
+    #detailsDiv{
+    width: 98%;
+    height: 84%;
+    margin:auto;
+    margin-top: 4%;
+    }
+    
+    
+    #movieDetails{
+        width: 98%;
+        height: 40%;
+        margin:auto;
+        background-image: url("Res/detailsDivBackground.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    
+    #movieDetailsOne{
+    width: 22%;
     height: 100%;
+    margin-left: 1%;
     float: left;
-}
-#logoImg{
+    }
+    #movieDetailsOneOne{
+    width: 98%;
+    height: 70%;
+    margin-left: 1%;
+    }
+    #movieDetailsOneOne img{
+        width:100%;
+        height: 100%;
+    }
+    #movieDetailsOneTwo{
+        width: 98%;
+        height: 20%;
+        margin-left: 1%;
+        background-color: rgb(15,15,15);
+    }
+    #movieDetailsOneTwo input{
+        height: 30%;
+        width: 100%;
+        background-color:green;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:16px;
+        border: none;
+        cursor:pointer;
+    }
+    
+    
+    
+    
+    #movieDetailsTwo{
+        width: 42%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+        text-align: center;
+    }
+    #movieDetailsTwo p:nth-child(1){
+        color: lightcoral;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:24px;
+        text-align: center;
+    }
+    #movieDetailsTwo p:nth-child(2){
+        color: rgb(50, 50, 50);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:14px;
+    }
+    #movieDetailsTwo p:nth-child(3){
+        color: rgb(50, 50, 50);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size:14px; 
+    }
+    
+    
+    
+    
+    #movieDetailsThree{
+        width: 32%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    #movieDetailsThree p{
+        color: lightcoral;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:24px;
+        text-align: center;
+    }
+    
+    #movieDetailsThree div{
+        width:44%;
+        height:30%;
+        margin-left: 2%;
+        margin-Top: 1%;
+        border:2px solid white;
+        float: left;
+        background-color: red;
+    }
+    
+    .similarMoviesImage{
+        width: 100%;
+        height: 100%;
+        cursor:pointer;
+    }
+    
+    
+    
+    
+    #movietrailer{
+        background-color: rgb(15, 15, 15);
+        width: 98%;
+        height: 20%;
+        margin:auto;
+    }
+    #trailerOne{
+        width: 32%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    #traielVideo{
+        width: 100%;
+        height: 100%;
+    }
+    #trailerTwo{
+        width: 32%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    #trailerThree{
+        width: 32%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    .screenShotClass{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #movieDirector{
+        background-color: rgb(15, 15, 15);
+        width: 98%;
+        height: 40%;
+        margin:auto;
+    }
+    #synopsis{
+        background-color: rgb(15, 15, 15);
+        width: 57%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    #synopsis p:nth-child(odd){
+        color: lightcoral;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:16px;
+    }
+    #synopsis p:nth-child(even){
+        color: rgb(100, 100, 100);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size:14px;   
+    }
+    
+    
+    #actors{
+        color: rgb(15, 15, 15);
+        width: 40%;
+        height: 100%;
+        margin-left: 1%;
+        float: left;
+    }
+    .directorCastTitle{
+        color: lightcoral;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:16px;
+    }
+    .hrClass{
+        display: block;
+        border-style: inset;
+        border-width: 1px;
+        border-color:  rgb(100, 100, 100);;
+    }
+    .directorCastInformation{
     width: 100%;
-    height: 100%;
-}
-#HeaderNavDiv{
-    background-color: rgb(8, 8, 8);
-    text-align: right;
-    width: 80%;
+    height: 10%;
+    }
+    .directorCastImageDiv{
+    width: 25%;
     height: 100%;
     float: left;
-}
-.navItemClass{
+    text-align: center;
+    }
+    .directorCastImage{
+        border-radius: 50%;
+        width: 50%;
+        height: 100%;
+    }
+    .directorCastName{
+    width: 75%;
     height: 100%;
-    width: 8%;
+    float: left;
+    text-align: center;
+    }
+    .directorCastName p:nth-child(1){
+        color: rgb(100, 100, 100);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size:14px;  
+        float: left;
+    }
+    .directorCastName p:nth-child(2){
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size:14px;  
+        float: left;
+        white-space: pre;
+    }
+    
+    #footerDiv{
+    text-align: center;
     background-color: rgb(15, 15, 15);
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:16px;
-    border: none;
-    cursor:pointer;
-}
-#homeBtn{
-    color: rgb(60, 60, 60);
-}
-
-
-
-
-
-#detailsDiv{
-width: 98%;
-height: 84%;
-margin:auto;
-margin-top: 4%;
-}
-
-
-#movieDetails{
+    font-weight: normal;
+    font-size:14px;
     width: 98%;
-    height: 40%;
-    margin:auto;
-    background-image: url("Res/detailsDivBackground.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-#movieDetailsOne{
-width: 22%;
-height: 100%;
-margin-left: 1%;
-float: left;
-}
-#movieDetailsOneOne{
-width: 98%;
-height: 70%;
-margin-left: 1%;
-}
-#movieDetailsOneOne img{
-    width:100%;
-    height: 100%;
-}
-#movieDetailsOneTwo{
-    width: 98%;
-    height: 20%;
-    margin-left: 1%;
-    background-color: rgb(15,15,15);
-}
-#movieDetailsOneTwo input{
-    height: 30%;
-    width: 100%;
-    background-color:green;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:16px;
-    border: none;
-    cursor:pointer;
-}
-
-
-
-
-#movieDetailsTwo{
-    width: 42%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-    text-align: center;
-}
-#movieDetailsTwo p:nth-child(1){
+    height: 5%;
+    margin:auto;    
+    }
+    #footerDiv a{
     color: lightcoral;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:24px;
-    text-align: center;
-}
-#movieDetailsTwo p:nth-child(2){
-    color: rgb(50, 50, 50);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size:14px;
-}
-#movieDetailsTwo p:nth-child(3){
-    color: rgb(50, 50, 50);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size:14px; 
-}
-
-
-
-
-#movieDetailsThree{
-    width: 32%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-#movieDetailsThree p{
-    color: lightcoral;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:24px;
-    text-align: center;
-}
-
-#movieDetailsThree div{
-    width:44%;
-    height:30%;
-    margin-left: 2%;
-    margin-Top: 1%;
-    border:2px solid white;
-    float: left;
-    background-color: red;
-}
-
-.similarMoviesImage{
-    width: 100%;
-    height: 100%;
-    cursor:pointer;
-}
-
-
-
-
-#movietrailer{
-    background-color: rgb(15, 15, 15);
-    width: 98%;
-    height: 20%;
-    margin:auto;
-}
-#trailerOne{
-    width: 32%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-#traielVideo{
-    width: 100%;
-    height: 100%;
-}
-#trailerTwo{
-    width: 32%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-#trailerThree{
-    width: 32%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-.screenShotClass{
-    width: 100%;
-    height: 100%;
-}
-
-
-#movieDirector{
-    background-color: rgb(15, 15, 15);
-    width: 98%;
-    height: 40%;
-    margin:auto;
-}
-#synopsis{
-    background-color: rgb(15, 15, 15);
-    width: 57%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-#synopsis p:nth-child(odd){
-    color: lightcoral;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:16px;
-}
-#synopsis p:nth-child(even){
-    color: rgb(100, 100, 100);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size:14px;   
-}
-
-
-#actors{
-    color: rgb(15, 15, 15);
-    width: 40%;
-    height: 100%;
-    margin-left: 1%;
-    float: left;
-}
-.directorCastTitle{
-    color: lightcoral;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size:16px;
-}
-.hrClass{
-    display: block;
-    border-style: inset;
-    border-width: 1px;
-    border-color:  rgb(100, 100, 100);;
-}
-.directorCastInformation{
-width: 100%;
-height: 10%;
-}
-.directorCastImageDiv{
-width: 25%;
-height: 100%;
-float: left;
-text-align: center;
-}
-.directorCastImage{
-    border-radius: 50%;
-    width: 50%;
-    height: 100%;
-}
-.directorCastName{
-width: 75%;
-height: 100%;
-float: left;
-text-align: center;
-}
-.directorCastName p:nth-child(1){
-    color: rgb(100, 100, 100);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size:14px;  
-    float: left;
-}
-.directorCastName p:nth-child(2){
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size:14px;  
-    float: left;
-    white-space: pre;
-}
-
-#footerDiv{
-text-align: center;
-background-color: rgb(15, 15, 15);
-color: white;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: normal;
-font-size:14px;
-width: 98%;
-height: 5%;
-margin:auto;    
-}
-#footerDiv a{
-color: lightcoral;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bold;
-font-size:14px;
-}
-
-
+    }
+    
+    
+    
