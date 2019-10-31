@@ -120,7 +120,7 @@
             }
         }
     ],
-    "Romance":[
+    "Romance": [
         {
             "Murder Mystery": {
                 "Title": "Murder Mystery",
@@ -132,7 +132,9 @@
                 "pic2": "Res/SF_Murder_Mystery_Pic2.jpg",
                 "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
                 "url": "https://yts.lt/movie/murder-mystery-2019"
-            },
+            }
+        },
+        {
             "See You Soon": {
                 "Title": "See You Soon",
                 "Year": "2019",
@@ -143,7 +145,9 @@
                 "pic2": "Res/SF_See_You_Soon_Pic2.jpg",
                 "trailer": "Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4",
                 "url": "https://yts.lt/movie/see-you-soon-2019"
-            },
+            }
+        },
+        {
             "Falling Inn Love": {
                 "Title": "Falling Inn Love",
                 "Year": "2019",
