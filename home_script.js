@@ -37,7 +37,7 @@ loadMoviesPromise();
 function loadHomeWithMovies(){
     var divs = document.querySelectorAll('#bodyTwoDivId');
     var imgs = document.querySelectorAll('img');
-
+    var imgDivs = document.querySelectorAll('.moviePosterDivClass');
 
     var movieObj = { }
     let j = 0;
@@ -51,7 +51,39 @@ function loadHomeWithMovies(){
         movieObj = moveis[catigory][m]; // Get Single Movie in catigory
         var mvKey = Object.keys(movieObj).toString();
         var imgSrc = movieObj[mvKey]["poster"];
-        imgs[i].setAttribute('key',mvKey);
+        imgDivs[i].setAttribute('key',mvKey);
+        //imgs[i].setAttribute('key',mvKey);
         imgs[i].src = imgSrc;
     }
 }
+
+function addingClickEventOnMovie(){
+    var divs = document.querySelectorAll('.moviePosterDivClass');
+    for(let i = 0 ; i < divs.length ; i++){
+        divs[i].addEventListener('click',gotDetailsPage);
+    }
+}
+
+addingClickEventOnMovie();
+
+function gotDetailsPage(e){
+
+    var element = e.target;
+    var tg = e.toElement.tagName;
+    var movieKey = "";
+    switch(tg){
+        case "IMG":
+        case "INPUT":
+            var parent = element.parentNode;
+            movieKey = parent.getAttribute('key');
+            console.log(movieKey);
+            break;
+        case "DIV":
+            movieKey = element.getAttribute('key');
+            console.log(movieKey)
+            break;
+        default:
+            ;
+    }
+}
+
