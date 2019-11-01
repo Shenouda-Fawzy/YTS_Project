@@ -45,7 +45,28 @@
         </div>
     </div>
 
-    <script src="Login_Register.js"></script>
+    <script>
+        var homeBtn = document.querySelector('#homeBtn');
+        homeBtn.addEventListener('click', function(){
+            console.log('clicked');
+            window.open('Home.html', '_self');
+        })
+
+        var loginBtn = document.querySelector('#loginBtn');
+        loginBtn.addEventListener('click', function(){
+            console.log('clicked');
+            window.open('Login.html', '_self');
+        })
+
+        var registerBtn = document.querySelector('#registerBtn');
+        registerBtn.addEventListener('click', function(){
+            console.log('clicked');
+            window.open('Register.html', '_self');
+        })
+    </script>
+    <script src="Login_Register.js">
+        
+    </script>
 </body>
 
 </html>

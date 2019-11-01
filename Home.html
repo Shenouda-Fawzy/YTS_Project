@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="Home.css" />
-    
+    <title>Home</title>
 </head>
 
 <body>
@@ -79,7 +79,19 @@
         </div>
     </div>
 
+    <script>
+            var loginBtn = document.querySelector('#loginBtn');
+            loginBtn.addEventListener('click', function(){
+                console.log('clicked');
+                window.open('Login.html', '_self');
+            })
     
+            var registerBtn = document.querySelector('#registerBtn');
+            registerBtn.addEventListener('click', function(){
+                console.log('clicked');
+                window.open('Register.html', '_self');
+            })
+        </script>
     <script src="Home.js"></script>
     <script src="ccookkie.js"></script>
     <script src="home_script.js"></script>
