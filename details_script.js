@@ -18,7 +18,17 @@ function loadPageWithData(){
     movieDeatils[0].innerText = moviObje.Title;
     movieDeatils[1].innerText = moviObje.Year;
     movieDeatils[2].innerText = getCookie('cat'); // Catigory
-    
+
+    var trailer = document.querySelector('video');
+    console.log(trailer);
+    trailer.src = moviObje.trailer;
+
+    var imdb = document.querySelector('progress+b');
+    imdb.innerText = moviObje.imdb;
+
+    var imdbPrgs = document.querySelector('progress');
+    imdbPrgs.value = moviObje.imdb;
+    //trailer.setAttribute('src' , moviObje.trailer)
 
 
 }
@@ -102,4 +112,5 @@ function loadSimilarMovies(){
     
     moviePics[0].src = poster1;
     moviePics[1].src = poster2;
+
 }
