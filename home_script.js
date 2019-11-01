@@ -35,27 +35,40 @@ async function loadMoviesPromise(){
 loadMoviesPromise();
 
 function loadHomeWithMovies(){
-    var divs = document.querySelectorAll('#bodyTwoDivId');
     var imgs = document.querySelectorAll('img');
     var imgDivs = document.querySelectorAll('.moviePosterDivClass');
 
     var movieObj = { }
     let j = 0;
-    var m = 0;
     var catKeys = Object.keys(moveis);
-    console.log(moveis[catKeys[0]]);
+    let counter = 0;
+    let moviIndex = 0;
+
+// This loop will load a single movie from each catigory in parallel
+// cat: 0, movi: 0
+// cat: 1, movi: 0
+// cat: 2, movi: 0
+// cat: 0, movi: 1
+// cat: 1, movi: 1
+// cat: 2, movi: 1
+// cat: 0, movi: 2
+    
     for(let i = 0 ; i < imgs.length ; i++){
         j = i % catKeys.length;
-        m = i % moveis[catKeys[j]].length ;
+        if(counter >= catKeys.length){
+            moviIndex++;
+            counter = 0;
+        }
         var catigory = catKeys[j].toString(); // Get catigory
-        movieObj = moveis[catigory][m]; // Get Single Movie in catigory
+        movieObj = moveis[catigory][moviIndex]; // Get Single Movie in catigory
         var mvKey = Object.keys(movieObj).toString();
         var imgSrc = movieObj[mvKey]["poster"];
         imgDivs[i].setAttribute('key',mvKey);
         imgDivs[i].setAttribute('cat',catigory);
-        imgDivs[i].setAttribute('inx',m);
+        imgDivs[i].setAttribute('inx',moviIndex);
         //imgs[i].setAttribute('key',mvKey);
         imgs[i].src = imgSrc;
+        counter++;
     }
 }
 
@@ -84,23 +97,25 @@ function gotDetailsPage(e){
             catKey = parent.getAttribute('cat');
             indx = parent.getAttribute('inx');
             movieObj = moveis[catKey][indx][movieKey];
-            console.log(movieObj);
             localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
             setCookie('cat',catKey);
-            var mv = window.open('details.html','_self');
-        break;
+            var mv = window.open('details.html','_blank');
+            console.log(e.target);
+            break;
         case "DIV":
-            
             movieKey = element.getAttribute('key');
             catKey = element.getAttribute('cat');
-            indx = parent.getAttribute('inx');
+            indx = element.getAttribute('inx');
+            movieObj = moveis[catKey][indx][movieKey];
             localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
             setCookie('cat',catKey);
-            var mv = window.open('details.html','_self'); //console.log(mv);
-            console.log(movieObj);
-        break;
+            var mv = window.open('details.html','_blank'); //console.log(mv);
+            break;
+        default:
+            console.log(e);
+            break;
     }
 }
 
