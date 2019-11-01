@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    cursor:default;
 }
 #mainDivId{
 width:100%;
@@ -114,12 +115,11 @@ text-align: center;
     margin-left: 8%;
     background-color: white;
     cursor: pointer;
-    transition-delay: .25s;
-    transition-duration: 2s;
+    transition-duration: .5s;
 }
 .moviePosterDivClass:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 11px aqua;
+    box-shadow: 0 0 10px aqua;
 }
 .moviePosterPhotoClass{
     width:80%;

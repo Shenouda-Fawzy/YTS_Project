@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    cursor:default;
 }
 #containerDiv{
 background-color: #080d11;
@@ -73,7 +74,14 @@ background-color: #080d11;
     height: 90%;
     margin-left: 1%;
     float: left;
+    cursor: pointer;
+    transition-duration: .5s;
     }
+    
+#movieDetailsOne:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px aqua;
+}
     
     .moviePosterDivClass{
         text-align: center;
