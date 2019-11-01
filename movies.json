@@ -2,7 +2,7 @@
     "Action": [
         {
             "Fast & Furious": {
-                "Titile": "Fast & Furious Presents: Hobbs & Shaw",
+                "Title": "Fast & Furious Presents: Hobbs & Shaw",
                 "Year": "2019",
                 "length": "2h 17 min",
                 "imdb": 6.6,
@@ -15,7 +15,7 @@
         },
         {
             "Crawl": {
-                "Titile": "Crawl",
+                "Title": "Crawl",
                 "Year": "2019",
                 "length": "1hr 27 min",
                 "imdb": 6.2,
@@ -28,7 +28,7 @@
         },
         {
             "The Wolf's Call": {
-                "Titile": "The Wolf's Call",
+                "Title": "The Wolf's Call",
                 "Year": "2019",
                 "length": "1hr 55 min",
                 "imdb": 7,
@@ -41,7 +41,7 @@
         },
         {
             "A Score to Settle": {
-                "Titile": "A Score to Settle",
+                "Title": "A Score to Settle",
                 "Year": "2019",
                 "length": "1hr 43 min",
                 "imdb": 4.5,
@@ -54,7 +54,7 @@
         },
         {
             "Breaking In": {
-                "Titile": "A Score to Settle",
+                "Title": "A Score to Settle",
                 "Year": "2018",
                 "length": "1hr 28 min",
                 "imdb": 5.4,

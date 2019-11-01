@@ -52,52 +52,55 @@ function loadHomeWithMovies(){
         var mvKey = Object.keys(movieObj).toString();
         var imgSrc = movieObj[mvKey]["poster"];
         imgDivs[i].setAttribute('key',mvKey);
+        imgDivs[i].setAttribute('cat',catigory);
+        imgDivs[i].setAttribute('inx',m);
         //imgs[i].setAttribute('key',mvKey);
         imgs[i].src = imgSrc;
     }
 }
 
-function addingClickEventOnMovie(){
+(function addingClickEventOnMovie(){
     var divs = document.querySelectorAll('.moviePosterDivClass');
     for(let i = 0 ; i < divs.length ; i++){
         divs[i].addEventListener('click',gotDetailsPage);
     }
-}
+})();
 
-addingClickEventOnMovie();
+//addingClickEventOnMovie();
 
 function gotDetailsPage(e){
 
     var element = e.target;
     var tg = e.toElement.tagName;
     var movieKey = "";
+    var catKey = "";
+    var indx = "";
+    var movieObj = {}; 
     switch(tg){
         case "IMG":
         case "INPUT":
             var parent = element.parentNode;
             movieKey = parent.getAttribute('key');
-            window.document.title = movieKey;
-            console.log(movieKey);
+            catKey = parent.getAttribute('cat');
+            indx = parent.getAttribute('inx');
+            movieObj = moveis[catKey][indx][movieKey];
+            console.log(movieObj);
+            localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
-            
+            setCookie('cat',catKey);
             var mv = window.open('details.html','_self');
-            mv.onload = function(){this.document.title = movieKey};
-            mv.onloadend  =  function(){this.document.title = movieKey};
-            //mv.document.title = 'My Title';
-            break;
+        break;
         case "DIV":
             
             movieKey = element.getAttribute('key');
-            window.document.title = movieKey;
-            console.log(movieKey)
+            catKey = element.getAttribute('cat');
+            indx = parent.getAttribute('inx');
+            localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
-            var mv = window.open('details.html','_self');
-            mv.onload = function(){this.document.title = movieKey};
-            mv.onloadend  =  function(){this.document.title = movieKey};
-            
-            //mv.document.title = 'My Title';
-            console.log(mv);
-            break;
+            setCookie('cat',catKey);
+            var mv = window.open('details.html','_self'); //console.log(mv);
+            console.log(movieObj);
+        break;
     }
 }
 
