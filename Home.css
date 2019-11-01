@@ -113,6 +113,7 @@ text-align: center;
     border-radius: 10%;
     margin-left: 8%;
     background-color: white;
+    cursor: pointer;
 }
 .moviePosterPhotoClass{
     width:80%;
