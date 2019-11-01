@@ -22,7 +22,7 @@
             <div id="loginDivId">
                 <p>Register</p>
                 <form>
-                        <input type="text" oninvalid="this.setCustomValidity('username is required')"
+                    <input type="text" oninvalid="this.setCustomValidity('username is required')"
                         oninput="this.setCustomValidity('')" required placeholder="username">
 
                     <input type="email" oninvalid="this.setCustomValidity('email is required')"
@@ -31,7 +31,7 @@
                     <input type="password" oninvalid="this.setCustomValidity('password is required')"
                         oninput="this.setCustomValidity('')" required placeholder="password">
 
-                        <input type="password" oninvalid="this.setCustomValidity('password is required')"
+                    <input type="password" oninvalid="this.setCustomValidity('password is required')"
                         oninput="this.setCustomValidity('')" required placeholder="confirm password">
 
                     <input id="submitbtnID" type="submit" value="Register">
@@ -40,32 +40,32 @@
         </div>
 
         <div id="footerDivId">
-            <p>YTS &copy; shenouda fawzy & ebram luis </p>
+            <p>YTS &copy; Ebram Luis & Shenouda Fawzy </p>
             <p>Read more about us <a href="AboutUs.html" target="_self">here</a>.</p>
         </div>
     </div>
 
     <script>
         var homeBtn = document.querySelector('#homeBtn');
-        homeBtn.addEventListener('click', function(){
+        homeBtn.addEventListener('click', function () {
             console.log('clicked');
             window.open('Home.html', '_self');
         })
 
         var loginBtn = document.querySelector('#loginBtn');
-        loginBtn.addEventListener('click', function(){
+        loginBtn.addEventListener('click', function () {
             console.log('clicked');
             window.open('Login.html', '_self');
         })
 
         var registerBtn = document.querySelector('#registerBtn');
-        registerBtn.addEventListener('click', function(){
+        registerBtn.addEventListener('click', function () {
             console.log('clicked');
             window.open('Register.html', '_self');
         })
     </script>
     <script src="Login_Register.js">
-        
+
     </script>
 </body>
 
