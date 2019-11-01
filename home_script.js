@@ -23,7 +23,7 @@ async function loadMoviesPromise(){
     
     
     await p.then(data => {
-        console.log("hi");
+        //console.log("hi");
         moveis = data;
         loadHomeWithMovies();
     }).catch(error => {
@@ -76,14 +76,28 @@ function gotDetailsPage(e){
         case "INPUT":
             var parent = element.parentNode;
             movieKey = parent.getAttribute('key');
+            window.document.title = movieKey;
             console.log(movieKey);
+            setCookie('key', movieKey);
+            
+            var mv = window.open('details.html','_self');
+            mv.onload = function(){this.document.title = movieKey};
+            mv.onloadend  =  function(){this.document.title = movieKey};
+            //mv.document.title = 'My Title';
             break;
         case "DIV":
+            
             movieKey = element.getAttribute('key');
+            window.document.title = movieKey;
             console.log(movieKey)
+            setCookie('key', movieKey);
+            var mv = window.open('details.html','_self');
+            mv.onload = function(){this.document.title = movieKey};
+            mv.onloadend  =  function(){this.document.title = movieKey};
+            
+            //mv.document.title = 'My Title';
+            console.log(mv);
             break;
-        default:
-            ;
     }
 }
 
