@@ -114,6 +114,12 @@ text-align: center;
     margin-left: 8%;
     background-color: white;
     cursor: pointer;
+    transition-delay: .25s;
+    transition-duration: 2s;
+}
+.moviePosterDivClass:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 11px aqua;
 }
 .moviePosterPhotoClass{
     width:80%;
