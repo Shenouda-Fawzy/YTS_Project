@@ -62,8 +62,9 @@
 
             <div id="movietrailer">
                 <div id="trailerOne">
-                    <video id="traielVideo" controls src="Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4" >
-                        
+                    <video id="traielVideo" controls
+                        src="Res/_The Lion King_ Official Trailer (2019) _ Donald G(360P).mp4">
+
                     </video>
                 </div>
                 <div id="trailerTwo">
@@ -78,19 +79,19 @@
                     <th>Lang</th>
                     <th>File Name</th>
                     <th>Download</th>
-        
+
                     <tr>
                         <td>Arabic</td>
                         <td>arabic.srt</td>
                         <td><a href="#">download</a></td>
                     </tr>
-        
+
                     <tr>
                         <td>English</td>
                         <td>eng_us.srt</td>
                         <td><a href="#">download</a></td>
                     </tr>
-        
+
                 </table>
             </div>
         </div>
@@ -103,6 +104,25 @@
         </div>
     </div>
 
+    <script>
+        var homeBtn = document.querySelector('#homeBtn');
+        homeBtn.addEventListener('click', function () {
+            console.log('clicked');
+            window.open('Home.html', '_self');
+        })
+
+        var loginBtn = document.querySelector('#loginBtn');
+        loginBtn.addEventListener('click', function () {
+            console.log('clicked');
+            window.open('Login.html', '_self');
+        })
+
+        var registerBtn = document.querySelector('#registerBtn');
+        registerBtn.addEventListener('click', function () {
+            console.log('clicked');
+            window.open('Register.html', '_self');
+        })
+    </script>
 
     <script src="details.js"></script>
     <script src="ccookkie.js"></script>
