@@ -75,7 +75,7 @@ background-color: #080d11;
     margin-left: 1%;
     float: left;
     cursor: pointer;
-    transition-duration: .5s;
+    transition-duration: .25s;
     }
     
 #movieDetailsOne:hover{
@@ -85,8 +85,8 @@ background-color: #080d11;
     
     .moviePosterDivClass{
         text-align: center;
-        border:solid 5px;
-        border-color:  rgb(100, 100, 100);
+        border:solid 2px;
+        border-color:  green;
         border-radius: 10%;
         margin-left: 8%;
         background-color: white;
@@ -150,6 +150,10 @@ background-color: #080d11;
         float: left;
         text-align: center;
     }
+
+
+
+
     #movieDetailsThree p{
         color: white;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -160,15 +164,21 @@ background-color: #080d11;
     
     #movieDetailsThree div{
         width:70%;
-        height:35%;
+        height:30%;
         margin-left: 2%;
         margin-Top: 1%;
-        border:5px solid gray;
+        border:2px solid green;
         border-radius: 10%;
         margin: auto;
-        margin-top: 2%;
+        margin-top: 5%;
         background-color: white;
+        cursor:pointer;
         text-align: center;
+        transition-duration: .25s;
+    }
+    #movieDetailsThree Div:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px aqua;
     }
     
     .similarMoviesImage{

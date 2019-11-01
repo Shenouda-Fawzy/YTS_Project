@@ -3,6 +3,8 @@ window.addEventListener('load',function(){
     window.document.title = title;
 })
 
+var similarMovie1 = "";
+var similarMovie2 = "";
 
 function loadPageWithData(){
     var moviObje = JSON.parse(localStorage.getItem('movie'));
@@ -14,13 +16,12 @@ function loadPageWithData(){
     moviePics[1].src = moviObje.pic2;
 
     var movieDeatils = document.querySelectorAll('#movieDetailsTwo p');
-    console.log(moviObje);
+    // console.log(moviObje);
     movieDeatils[0].innerText = moviObje.Title;
     movieDeatils[1].innerText = moviObje.Year;
     movieDeatils[2].innerText = getCookie('cat'); // Catigory
 
     var trailer = document.querySelector('video');
-    console.log(trailer);
     trailer.src = moviObje.trailer;
 
     var imdb = document.querySelector('progress+b');
@@ -28,7 +29,6 @@ function loadPageWithData(){
 
     var imdbPrgs = document.querySelector('progress');
     imdbPrgs.value = moviObje.imdb;
-    //trailer.setAttribute('src' , moviObje.trailer)
 
 
 }
@@ -99,18 +99,37 @@ function loadSimilarMovies(){
         ip2Title = similarMovies[iP2][movieKey[0]].Title;
 
         console.log(iP1 , iP2);
-        console.log(moviObje.Title , ip1Title , ip2Title);
     } while (iP1 === iP2 || ip2Title == moviObje.Title || ip1Title == moviObje.Title);
 
     movieKey = Object.keys(similarMovies[iP1]);
-    ip1Title = similarMovies[iP1][movieKey[0]].Title;
-    poster1 = similarMovies[iP1][movieKey[0]].poster
+    similarMovie1 = similarMovies[iP1][movieKey];
+    console.log(similarMovie1);
+
+    ip1Title = similarMovies[iP1][movieKey].Title;
+    poster1 = similarMovies[iP1][movieKey].poster
     
     movieKey = Object.keys(similarMovies[iP2]);
-    ip2Title = similarMovies[iP2][movieKey[0]].Title;
-    poster2 = similarMovies[iP2][movieKey[0]].poster
+    ip2Title = similarMovies[iP2][movieKey].Title;
+    poster2 = similarMovies[iP2][movieKey].poster
     
+    console.log('--------------------------------')
+    similarMovie2 = similarMovies[iP2][movieKey];
+    console.log(similarMovie2);
+
     moviePics[0].src = poster1;
     moviePics[1].src = poster2;
-
 }
+
+
+(function (){
+    var moviePics = document.querySelectorAll('.similarMoviesImage');
+    moviePics[0].addEventListener('click', function(){
+        localStorage.setItem('movie' , JSON.stringify(similarMovie1));
+        window.open('details.html', '_self');
+    });
+
+    moviePics[1].addEventListener('click', function(){
+        localStorage.setItem('movie' , JSON.stringify(similarMovie2));
+        window.open('details.html', '_self');
+    });
+})();

@@ -100,7 +100,7 @@ function gotDetailsPage(e){
             localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
             setCookie('cat',catKey);
-            var mv = window.open('details.html','_blank');
+            var mv = window.open('details.html','_self');
             console.log(e.target);
             break;
         case "DIV":
@@ -111,7 +111,7 @@ function gotDetailsPage(e){
             localStorage.setItem('movie' , JSON.stringify(movieObj));
             setCookie('key', movieKey);
             setCookie('cat',catKey);
-            var mv = window.open('details.html','_blank'); //console.log(mv);
+            var mv = window.open('details.html','_self'); //console.log(mv);
             break;
         default:
             console.log(e);
